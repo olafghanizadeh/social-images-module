@@ -1,7 +1,7 @@
 {{ define "response" }}
     {
         "cards" : [
-        {{$pages := where .Site.Pages ".Params.type" "blog"}}
+        {{$pages := where .Site.Pages ".Params.type" "post"}}
         {{ range $i, $e := $pages}}
             {{- if $i -}}, {{ end -}}{{ .Render "item" }}
         {{ end }}
