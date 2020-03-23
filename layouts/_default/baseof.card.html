@@ -7,6 +7,7 @@
   {{ $securecss := . | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $securecss.Permalink | relURL  }}" integrity="{{ $securecss.Data.Integrity }}"
     crossorigin="anonymous">
+    {{end}}
 </head>
 
 <body>
