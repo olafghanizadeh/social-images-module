@@ -1,0 +1,13 @@
+{
+  "name": "test",
+  "version": "1",
+  "description": "1",
+  "main": "capture.js",
+  "repository": "https://github.com/formspree/blogophonic-hugo.git",
+  "author": "Olaf Ghanizadeh <laffen91@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "puppeteer": "^2.0.0"
+  }
+}

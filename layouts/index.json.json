@@ -1,0 +1,10 @@
+{{ define "response" }}
+    {
+        "cards" : [
+        {{$pages := where .Site.Pages ".Params.type" "blog"}}
+        {{ range $i, $e := $pages}}
+            {{- if $i -}}, {{ end -}}{{ .Render "item" }}
+        {{ end }}
+        ]
+    }
+{{ end }}
