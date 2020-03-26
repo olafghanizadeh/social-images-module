@@ -2,7 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}" dir="ltr">
 
 <head>
-  {{ $css := resources.Get "css/style.css"  }}
+  {{ $css := resources.Get "css/*.css"  }}
   {{ with $css }}
   {{ $securecss := . | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $securecss.Permalink | relURL  }}" integrity="{{ $securecss.Data.Integrity }}"
