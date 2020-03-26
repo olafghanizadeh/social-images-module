@@ -10,7 +10,8 @@ const conf = {
   index: 'http://localhost:1313/index.json'
 }
 
-
+exports.handler = function(event, context, callback) {
+  // your server-side functionality
 /*
 * Take a snapshot with puppeteer
 */
@@ -53,3 +54,4 @@ axios.get(conf.index)
   .catch((error) => {
     console.log('error :', error)
   });
+}
